@@ -1,0 +1,55 @@
+/* Base calendar styling */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  max-width: 800px;
+  height: 450px;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the month and year header */
+.month-year {
+  grid-column: 1 / span 7;
+  background: #3F51B5;  /* Indigo 500 */
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+/* Styling for the weekday headers */
+.weekday {
+  background: #7986CB;  /* Indigo 300 */
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Basic day styling */
+.day {
+  background: #E0E0E0;  /* Grey 300 */
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Highlighted styles for today and rest days */
+.today-box {
+  background: #CDDC39;  /* Lime 400 */
+  font-weight: bold;
+}
+
+.rest-day-box {
+  background: #EF5350;  /* Red 400 */
+}
+
+/* Hover effect for days */
+.day:hover {
+  background: #BDBDBD;  /* Grey 400 */
+}

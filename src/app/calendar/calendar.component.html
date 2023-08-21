@@ -1,0 +1,15 @@
+<div class="calendar">
+  <div class="month-year">
+    {{ monthNames[today.getMonth()] }} {{ today.getFullYear() }}
+  </div>
+  <div class="weekday" *ngFor="let day of weekDays">
+    {{ day }}
+  </div>
+  <div class="day" *ngFor="let day of daysArray; index as idx"
+       [style.grid-column-start]="(startDay + idx) % 7 === 0 ? 7 : (startDay + idx) % 7"
+       [ngClass]="{'today-box': isToday(day), 'rest-day-box': isRestDay(idx + 1)}">
+    <span class="numbers">
+      {{ day }}
+    </span>
+  </div>
+</div>
