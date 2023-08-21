@@ -1,0 +1,16 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.date-card {
+  width: 300px;
+  text-align: center;
+}
+
+.mat-card-content {
+  padding: 1rem;
+}
+

@@ -1,15 +1,15 @@
 <div class="text-container">
-  <label>
-    Text 1:
-    <textarea [(ngModel)]="text1"></textarea>
-  </label>
+  <mat-form-field appearance="outline">
+    <mat-label>Text 1</mat-label>
+    <textarea matInput [(ngModel)]="text1"></textarea>
+  </mat-form-field>
 
-  <label>
-    Text 2:
-    <textarea [(ngModel)]="text2"></textarea>
-  </label>
+  <mat-form-field appearance="outline">
+    <mat-label>Text 2</mat-label>
+    <textarea matInput [(ngModel)]="text2"></textarea>
+  </mat-form-field>
 
-  <button (click)="compareTexts()">Compare</button>
+  <button mat-raised-button color="primary" (click)="compareTexts()">Compare</button>
 
   <div class="result">
     <div *ngFor="let word of differences">

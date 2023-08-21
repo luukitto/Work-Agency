@@ -1,10 +1,23 @@
-<app-calendar></app-calendar>
-<app-format-data></app-format-data>
-<div style="text-align:center">
-  <h1>
-    Text Comparison App
-  </h1>
-</div>
+<mat-toolbar color="primary">
+  <div class="center-buttons">
+    <button mat-button routerLink="/calendar" routerLinkActive="active-link">Calendar</button>
+    <button mat-button routerLink="/format" routerLinkActive="active-link">Format</button>
+    <button mat-button routerLink="/comparison" routerLinkActive="active-link">Comparison</button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
 
-<app-text-comparison></app-text-comparison>
+
+
+
+
+<!--<app-calendar></app-calendar>-->
+<!--<app-format-data></app-format-data>-->
+<!--<div style="text-align:center">-->
+<!--  <h1>-->
+<!--    Text Comparison App-->
+<!--  </h1>-->
+<!--</div>-->
+
+<!--<app-text-comparison></app-text-comparison>-->
 
